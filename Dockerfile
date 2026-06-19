@@ -7,7 +7,7 @@
 # ── 1. Frontend: build web/ → server/router/frontend/dist ────────────────────
 FROM node:22-alpine AS frontend
 WORKDIR /src
-RUN npm install -g pnpm@11.0.1
+RUN npm install -g pnpm@9
 COPY . .
 WORKDIR /src/web
 RUN pnpm install --frozen-lockfile
